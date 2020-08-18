@@ -1,0 +1,28 @@
+public class consecutiveOne
+{
+  public static void main (String[]args)
+  {
+    int array[] = { 1,1,1,1,1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0,1,1,1,1 };
+
+    int count = 0;
+    int result = 0;
+
+    for (int i = 0; i < array.length; i++)
+      {
+
+
+	if (array[i] == 0)
+	  count = 0;
+
+	else
+	  {
+	    count++;		 
+	    result = count>result ?count :result;
+	  }
+      }
+
+    System.out.println ("Maximum consecutive one’s : "+result );
+
+  }
+
+}
